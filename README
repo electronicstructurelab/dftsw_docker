@@ -1,0 +1,17 @@
+This repository contains a binary dftsw, Dockerfile, a basis set directory, and an example directory.
+
+
+Building a container, simply run
+
+docker build -t dftsw-container .
+
+
+The container can be used interactively with "docker run -it"
+
+docker run -it --network=host  dftsw-container /bin/bash
+
+
+Once entering an interactive Docker, run the command below to activate the mpi module
+
+module load mpi
+
