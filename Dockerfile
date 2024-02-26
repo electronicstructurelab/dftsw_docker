@@ -14,6 +14,7 @@ COPY examples           /home/$USERNAME/examples
 COPY basis              /home/$USERNAME/basis
 COPY README             /home/$USERNAME/
 
+RUN echo "module load mpi" >> /home/$USERNAME/.bashrc
 #RUN echo "module load mpi" >> /home/$USERNAME/bashenv
 #ENV BASH_ENV=/home/$USERNAME/bashenv
 
