@@ -12,7 +12,7 @@ RUN usermod -aG wheel $USERNAME
 COPY dftsw_exe          /home/$USERNAME/
 COPY examples           /home/$USERNAME/examples
 COPY basis              /home/$USERNAME/basis
-COPY README             /home/$USERNAME/
+COPY README.MD          /home/$USERNAME/
 
 RUN echo "module load mpi" >> /home/$USERNAME/.bashrc
 #RUN echo "module load mpi" >> /home/$USERNAME/bashenv
